@@ -29,29 +29,44 @@
 
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash}m{#1}} %better looking multirow cells
 
+% TEST FORSIDE
+\usepackage{afterpage}% for "\afterpage"
+%\usepackage{xcolor}
+\usepackage{pagecolor}
+\definecolor{red}{HTML}{D32F2F}
+\usepackage{mathpazo}
+% SLUTT
+
 \begin{document}
+% TEST FORSIDE
+\newpagecolor{red}
+% SLUTT
 \begin{center}
-\vspace*{4.5cm}
-\Huge{Prosjektrapport}\\[2pc]
-\vspace{-1.5cm}
-\noindent\rule{11cm}{0.8pt}\\
+\vspace*{3.5cm}
+%\Huge\textbf{{\textcolor{white}{Prosjektrapport}}}\\[2pc]
+{\fontsize{50}{100}\textbf{{\textcolor{white}{Prosjektrapport}}}}
+\vspace{0.5cm}
+%\noindent\rule{11cm}{0.8pt}\\
 
-\Large{IT3402: Design av grafiske brukergrensesnitt}\\[1pc]
-\vspace{-0.7cm}
-\noindent\rule{11cm}{0.8pt}\\
-\vspace{3.5cm}
+\Large{\textcolor{white}{IT3402: Design av grafiske brukergrensesnitt}}\\[1pc]
+%\vspace{-0.7cm}
+%\noindent\rule{11cm}{0.8pt}\\
+\vspace{1.5cm}
 
-\large{{\textbf{Gruppe 15}: \\
-Martin Dørum\\
+\includegraphics[scale=0.35]{images/sirkus2.png}
+\vspace{1.5cm}
+
+\large{{\textbf{\textcolor{white}{Gruppe 15:}} \\
+\textcolor{white}{Martin Dørum\\
 Andrea Leikvold\\
 Signe Elise Livgard\\
-Anne-Marie Samuelsen\\
+Anne-Marie Samuelsen}\\
 }}
-\vspace{2.0cm}
+\vspace{2.5cm}
 
-\large{28. November 2016}\\
+\large{\textcolor{white}{28. November 2016}}\\
 \vspace{1.0cm}
-\includegraphics[scale=0.6]{images/ntnu.png}
+\includegraphics[scale=0.15]{images/ntnu2.png}
 \end{center}
 
 \setlength{\parindent}{4em}
@@ -60,6 +75,7 @@ Anne-Marie Samuelsen\\
 
 \thispagestyle{empty} %tar bort sidetall
 \newpage
+\pagecolor{white}
 \thispagestyle{empty}
 \begin{center}
 Denne siden er ment å være blank.
@@ -74,6 +90,11 @@ Denne siden er ment å være blank.
 \newpage
 \listoffigures
 \newpage
+\newpage
+\begin{center}
+%satt inn for å få intro på en høyre-side
+Denne siden er ment å være blank.
+\end{center}
 \newpage
 \begin{center}
 %satt inn for å få intro på en høyre-side
